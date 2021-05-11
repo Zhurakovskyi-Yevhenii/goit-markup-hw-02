@@ -157,12 +157,15 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+.projects-link {
+  color: var(--text-color);
+}
 .projects-list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--text-color);
+  color: inherit;
 }
 .projects-description {
   font-size: 16px;
