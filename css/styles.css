@@ -8,6 +8,7 @@
   --color-btn: #188ce8;
   --background-color-team-filters: #f5f4fa;
   --background-color-filters: #eeeeee;
+  --color-footer-link: rgba(255, 255, 255, 0.6);
 }
 .list {
   list-style: none;
@@ -15,9 +16,9 @@
 .link {
   text-decoration: none;
 }
-.body {
+body {
   font-family: var(--main-font);
-  color: var(--paragraph-color);
+  color: var(--text-color);
 }
 /*===============COMPONENTS==========*/
 .part-logo {
@@ -29,18 +30,17 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: inherit;
 }
 .logo-link-studio {
   color: var(--text-color-white);
 }
 .menu-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: inherit;
 }
 .menu-list :hover,
 .menu-list :focus {
@@ -53,7 +53,6 @@
 /*==============END COMPONENTS======*/
 /*================HEADER================*/
 .contacts-list {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -104,7 +103,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-color);
 }
 .description {
   font-size: 14px;
@@ -114,22 +112,23 @@
 /*============END SECTION SKILLS======*/
 /*===========SECTION ABOUT==========*/
 .about-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color);
 }
 /*============END SECTION ABOUT======*/
 /*===========SECTION TEAM=========*/
 
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
 .team-list-sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--text-color);
 }
 .team-list-description {
   font-size: 16px;
@@ -139,9 +138,7 @@
 .team {
   background-color: var(--background-color-team-filters);
 }
-.team-list {
-  background-color: var(--text-color-white);
-}
+
 /*=========== END SECTION TEAM=========*/
 /*==========SECTION FILTERS=========*/
 .filters-title {
@@ -165,7 +162,6 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--text-color);
 }
 .projects-description {
   font-size: 16px;
@@ -182,13 +178,27 @@
   background-color: var(--background-color-grey);
 }
 .address {
-  font-family: var(--main-font);
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color-white);
+}
+.footer-contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.footer-contacts-list :hover,
+.footer-contacts-list :focus {
+  color: var(--accent-color);
+}
+.footer-tel-link {
+  color: var(--color-footer-link);
+}
+.footer-mail-link {
+  color: var(--color-footer-link);
 }
 /*======logo,address,contacts-list in COMPONENTS===*/
 /*==============END FOOTER==========*/
